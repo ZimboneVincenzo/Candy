@@ -1,0 +1,33 @@
+.row{
+    max-width: $grid-width;
+    margin: auto;
+    padding-bottom: 5rem;
+
+    @include clearfix;
+
+    &:not(:last-child){
+        padding-bottom: 0;
+    }
+
+    @include respond(tab-land){
+        max-width: 100vp;
+        margin: 0;
+    }
+
+    [class^="col-"]{
+
+        float: left;
+
+        &:not(:last-child){
+            margin-right: 0;
+            padding-bottom: 0;
+        }   
+
+    }
+}
+
+
+.col-1-of-2 {
+    width: calc((100% - #{$gutter-horizontal}) / 2 );
+}
+

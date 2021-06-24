@@ -1,0 +1,20 @@
+.second{
+    font-size: 1.5rem;
+    &__img{
+        &--p1{
+            height: 100%;
+            width: 100%;
+        }
+        &--p2{
+           
+            @include respond(phone){
+                display: none;
+            }
+        }
+    }
+
+    &__text{
+      
+        text-align: center;
+    }
+}

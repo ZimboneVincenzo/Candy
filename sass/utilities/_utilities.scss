@@ -1,0 +1,14 @@
+.padding{
+    padding: 0 9rem 0 9rem;
+
+    @include respond(tab-land){
+        padding: 0 5rem 0 5rem;
+    }
+}
+
+.capitalize{
+    text-transform: capitalize !important;
+}
+
+
+
