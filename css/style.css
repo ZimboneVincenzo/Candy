@@ -222,7 +222,6 @@ body {
     padding-bottom: 0; }
   @media only screen and (max-width: 75em) {
     .row {
-      max-width: 100vp;
       margin: 0; } }
   .row [class^="col-"] {
     float: left; }
@@ -245,7 +244,6 @@ body {
 
 .menutext {
   font-size: 4rem;
-  font-weight: lighter;
   color: white; }
   @media only screen and (max-width: 75em) {
     .menutext {
@@ -260,8 +258,17 @@ body {
     height: 100%;
     width: 100%;
     padding: 5rem 3rem 0 2rem; }
+    @media only screen and (max-width: 75em) {
+      .first__list--museum {
+        padding: 3rem 3rem 0 2rem;
+        height: 100%;
+        width: 100%; } }
     .first__list--museum li {
       padding: 0.5rem 1rem 0.5rem 1rem; }
+      @media only screen and (max-width: 75em) {
+        .first__list--museum li {
+          height: 100%;
+          width: 100%; } }
   .first__list__img--p1 {
     height: 100%;
     width: 100%; }

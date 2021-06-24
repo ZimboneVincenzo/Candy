@@ -2,8 +2,15 @@
     font-size: 3rem;
 
     &__list{
+
         &--museum{
- 
+   
+            @include respond(tab-land){ 
+                padding: 3rem 3rem 0 2rem;
+                height: 100%;
+                width: 100%;
+
+            }
                 list-style: none;
                 text-align: left;
                 text-transform: uppercase;
@@ -12,15 +19,21 @@
                 padding: 5rem 3rem 0 2rem;
       
                 li{
-                    padding: 0.5rem 1rem 0.5rem 1rem;
+
+
+                @include respond(tab-land){ 
+                    height: 100%;
+                    width: 100%;
+                }
+                   
+                padding: 0.5rem 1rem 0.5rem 1rem;
                 }
             }
     
         &__img{
             &--p1{
                 height: 100%;
-                width: 100%;
-             
+                width: 100%;  
             }
         }
     }
