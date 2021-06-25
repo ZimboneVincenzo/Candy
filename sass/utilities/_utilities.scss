@@ -1,9 +1,13 @@
 .padding{
     padding: 0 9rem 0 9rem;
 
-    @include respond(tab-land){
-        padding: 0 5rem 0 5rem;
+    @include respond(phone){
+        padding: 1rem;
+        max-width: 100%;
     }
+    @include respond(tab-land){
+        padding: 1.5rem;;
+     }
 }
 
 .capitalize{
